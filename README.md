@@ -5,9 +5,9 @@
 
 <br /><br />
 
-### Get Started
+## Get Started
 
-#### Example
+### Example
 
 ```ts
 import qedmail from "qedmail"
