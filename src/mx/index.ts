@@ -1,1 +1,1 @@
-export { default as checkMX } from "./verify";
+export { default as checkMX } from "./verify"

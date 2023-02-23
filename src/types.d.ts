@@ -1,25 +1,25 @@
-import type { MxRecord } from "dns";
+import type { MxRecord } from "dns"
 
 type SyntaxResult = {
-  valid: boolean;
-  username?: string;
-  domain?: string;
-};
+  valid: boolean
+  username?: string
+  domain?: string
+}
 
 type MxResult = {
-  valid: boolean;
-  mxRecords?: MxRecord[];
-};
+  valid: boolean
+  mxRecords?: MxRecord[]
+}
 
 type SMTPResult = {
-  valid: boolean;
-};
+  valid: boolean
+}
 
 type Result = {
-  email: string;
-  reachable: boolean;
+  email: string
+  reachable: boolean
 
-  syntax: SyntaxResult;
-  mx: MxResult;
-  smtp: SMTPResult;
-};
+  syntax: SyntaxResult
+  mx: MxResult
+  smtp: SMTPResult
+}

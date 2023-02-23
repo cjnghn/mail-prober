@@ -1,1 +1,1 @@
-export { default as checkSyntax } from "./verify";
+export { default as checkSyntax } from "./verify"
