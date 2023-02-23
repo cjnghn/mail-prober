@@ -33,4 +33,4 @@ async function checkEmail(email: string): Promise<Result> {
   return { ...result, reachable: true, syntax, mx, smtp }
 }
 
-export default { checkEmail, checkMX, checkSMTP, checkSyntax }
+export { checkEmail, checkMX, checkSMTP, checkSyntax }
