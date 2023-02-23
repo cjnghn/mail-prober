@@ -1,14 +1,28 @@
 {
   "name": "qed-mail",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/lib.js",
+  "version": "0.0.1",
+  "description": "📮 A NodeJS library for checking if an email address exists without sending any email.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prettier": "prettier --write .",
     "test": "jest"
   },
-  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/dontdonut/qed-mail/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dontdonut/qed-mail"
+  },
+  "keywords": [
+    "email",
+    "disposable",
+    "email-validation",
+    "email-verify",
+    "check-email"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

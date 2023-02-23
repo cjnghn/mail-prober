@@ -1,5 +1,5 @@
 import dns from "dns"
-import type { MxResult } from "../../types"
+import { MxResult } from "../types"
 
 async function checkMX(domain: string): Promise<MxResult> {
   return new Promise(resolve => {

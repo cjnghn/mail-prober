@@ -1,24 +1,23 @@
 import type { MxRecord } from "dns"
 
-type SyntaxResult = {
+export type SyntaxResult = {
   valid: boolean
   username?: string
   domain?: string
 }
 
-type MxResult = {
+export type MxResult = {
   valid: boolean
   mxRecords?: MxRecord[]
 }
 
-type SMTPResult = {
+export type SMTPResult = {
   valid: boolean
 }
 
-type Result = {
+export type Result = {
   email: string
   reachable: boolean
-
   syntax: SyntaxResult
   mx: MxResult
   smtp: SMTPResult

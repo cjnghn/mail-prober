@@ -1,8 +1,7 @@
 import { checkMX } from "./mx"
 import { checkSMTP } from "./smtp"
 import { checkSyntax } from "./syntax"
-
-import type { Result } from "../types"
+import { Result } from "./types"
 
 const DEFAULT_RESULT = {
   reachable: false,

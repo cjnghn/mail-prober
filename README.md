@@ -7,6 +7,13 @@
 
 ## Get Started
 
+### Install
+
+Use `npm` to install this package.
+
+```bash
+```
+
 ### Example
 
 ```ts

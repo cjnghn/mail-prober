@@ -1,5 +1,5 @@
 import { Client } from "."
-import type { SMTPResult } from "../../types"
+import { SMTPResult } from "../types"
 
 async function checkSMTP(
   to: string,
