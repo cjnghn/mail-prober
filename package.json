@@ -1,6 +1,6 @@
 {
   "name": "qed-mail",
-  "version": "0.0.1",
+  "version": "0.0.2-fix",
   "description": "📮 A NodeJS library for checking if an email address exists without sending any email.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
