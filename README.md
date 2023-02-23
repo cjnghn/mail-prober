@@ -12,12 +12,13 @@
 Use `npm` to install this package.
 
 ```bash
+npm install --save-dev qed-mail
 ```
 
 ### Example
 
 ```ts
-import qedmail from "qedmail"
+import qedmail from "qed-mail"
 
 qedmail.checkEmail("example@example.com").then(console.log)
 ```
