@@ -2,7 +2,7 @@ import { checkMX } from "./mx"
 import { checkSMTP } from "./smtp"
 import { checkSyntax } from "./syntax"
 
-import type { Result } from "./types"
+import type { Result } from "../types"
 
 const DEFAULT_RESULT = {
   reachable: false,
@@ -26,7 +26,7 @@ async function checkEmail(email: string): Promise<Result> {
   }
 
   const records = mx.mxRecords.sort((a, b) => a.priority - b.priority)
-  const smtp = await checkSMTP(email, records[0].exchange, 25)
+  const smtp = await checkSMTP(email, records[0]!.exchange, 25)
   if (!smtp.valid) {
     return { ...result, syntax, mx, smtp }
   }
@@ -34,4 +34,4 @@ async function checkEmail(email: string): Promise<Result> {
   return { ...result, reachable: true, syntax, mx, smtp }
 }
 
-export default checkEmail
+export default { checkEmail, checkMX, checkSMTP, checkSyntax }

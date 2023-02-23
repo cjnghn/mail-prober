@@ -2,7 +2,7 @@
   "name": "qed-mail",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/lib.js",
   "scripts": {
     "build": "tsc",
     "prettier": "prettier --write .",
