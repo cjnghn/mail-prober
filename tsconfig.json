@@ -3,7 +3,7 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     // Recommended Node options have been incorporated from https://github.com/tsconfig/bases/blob/master/bases/node14.json
 
-    "target": "ES2022",
+    "target": "ES5",
     "module": "commonjs",
     "esModuleInterop": true,
 
