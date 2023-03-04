@@ -18,7 +18,7 @@ npm install --save-dev qed-mail
 ### Example
 
 ```ts
-import qedmail from "qed-mail"
+import qedmail from "qed-mail";
 
-qedmail.checkEmail("example@example.com").then(console.log)
+qedmail.checkEmail("example@example.com").then(console.log);
 ```
