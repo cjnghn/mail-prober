@@ -13,6 +13,7 @@ export type MxResult = {
 
 export type SMTPResult = {
   valid: boolean;
+  error?: string;
 };
 
 export type Result = {

@@ -22,3 +22,4 @@ async function main() {
 }
 
 main();
+// 📮 REACHABLE >  [ 'chotnt321@naver.com', 'chotnt741@naver.com', 'chotnt767@naver.com' ]

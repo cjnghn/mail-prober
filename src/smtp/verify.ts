@@ -4,20 +4,26 @@ import { SMTPResult } from "../types";
 async function checkSMTP(
   to: string,
   host: string,
-  port: number
+  port: number,
+  timeout: number = 5000
 ): Promise<SMTPResult> {
   const c = new Client(host, port);
 
   try {
-    await c.connect();
+    await c.connect({ timeout });
 
     await c.mail("");
     await c.rcpt(to);
     await c.quit();
 
-    return { valid: true };
-  } catch (err) {
-    return { valid: false };
+    return {
+      valid: true,
+    };
+  } catch (err: any) {
+    return {
+      valid: false,
+      error: err.message,
+    };
   } finally {
     c.close();
   }
